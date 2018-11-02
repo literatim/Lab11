@@ -33,7 +33,7 @@ namespace Lab11
 
                 var userSelection = GetUserInput();
 
-                Movie.GetMovieTitle(userSelection, movieList);
+                Movie.GetMovieTitle(userSelection.ToLower(), movieList);
 
                 Console.WriteLine($"Do you want to continue? (y/n)");
 

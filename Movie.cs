@@ -21,41 +21,15 @@ namespace Lab11
         {
             List<Movie> selectedMovies = movieList.FindAll(m => m.Category == userSelection);
 
-            foreach (var title in selectedMovies)
+            if (!selectedMovies.Any())
             {
-                Console.WriteLine(title.Title);
+                Console.WriteLine("That category doesn't exist.");
+                return;
             }
 
-            switch (userSelection)
+            foreach (var movie in selectedMovies)
             {
-                case "animated":
-                {
-
-                 
-
-                   // animatedMovie.ForEach(Console.WriteLine);
-
-                    break;
-                }
-                case "drama":
-                {
-
-                    break;
-                }
-                case "horror":
-                {
-                    break;
-                }
-                case "scifi":
-                {
-
-                    break;
-                }
-                default:
-                {
-                    Console.WriteLine(value: "That category doesn't exist.");
-                    break;
-                }
+                Console.WriteLine(movie.Title);
             }
         }
     }
