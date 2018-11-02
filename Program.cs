@@ -33,33 +33,7 @@ namespace Lab11
 
                 var userSelection = GetUserInput();
 
-                switch (userSelection)
-                {
-                    case "animated":
-                    {
-
-                            break;
-                    }
-                    case "drama":
-                    {
-
-                        break;
-                    }
-                    case "horror":
-                    {
-                        break;
-                    }
-                    case "scifi":
-                    {
-
-                        break;
-                    }
-                    default:
-                    {
-                        Console.WriteLine("That category doesn't exist.");
-                        continue;
-                    }
-                }
+                Movie.GetMovieTitle(userSelection, movieList);
 
                 Console.WriteLine($"Do you want to continue? (y/n)");
 
