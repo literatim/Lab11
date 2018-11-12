@@ -10,6 +10,8 @@ namespace Lab11
             Console.WriteLine("Welcome to the Movie List Application!");
 
             List<Movie> movieList = new List<Movie>();
+
+            // James - I really like that you are using constuctors here, makes the code much easier to read. 
             movieList.Add(new Movie(movieTitle: "Star Wars", movieCategory: "scifi"));
             movieList.Add(new Movie(movieTitle:"2001: A Space Odyssey", movieCategory: "scifi"));
             movieList.Add(new Movie(movieTitle:"E.T. The Extra-Terrestrial", movieCategory: "scifi"));
